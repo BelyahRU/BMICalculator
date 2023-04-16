@@ -9,11 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+    @IBOutlet weak var heightNumLabel: UILabel!
+    @IBOutlet weak var weightNumLabel: UILabel!
+    
+    //rounding to 2 decimal places
+    
+    //print(String(format: "%.2f", sender.value))
+    //print(round(currentValue*100) / 100)
+    
+    
+    @IBAction func heightSliderChanged(_ sender: UISlider) {
+        var currentValue = sender.value
+        heightNumLabel.text = String(round(currentValue * 100) / 100)
     }
-
-
+    
+    @IBAction func weightSliderChanged(_ sender: UISlider) {
+        var currentValue = sender.value
+        weightNumLabel.text = String(Int(currentValue))
+    }
+    
 }
 
