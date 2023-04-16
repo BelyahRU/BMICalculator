@@ -11,9 +11,10 @@ class ViewController: UIViewController {
 
     
     @IBOutlet weak var heightNumLabel: UILabel!
+    @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var weightNumLabel: UILabel!
-    
     //rounding to 2 decimal places
+    @IBOutlet weak var weightSlider: UISlider!
     
     //print(String(format: "%.2f", sender.value))
     //print(round(currentValue*100) / 100)
@@ -21,12 +22,18 @@ class ViewController: UIViewController {
     
     @IBAction func heightSliderChanged(_ sender: UISlider) {
         var currentValue = sender.value
-        heightNumLabel.text = String(round(currentValue * 100) / 100)
+        heightNumLabel.text = String(round(currentValue * 100) / 100)+"m"
     }
     
     @IBAction func weightSliderChanged(_ sender: UISlider) {
         var currentValue = sender.value
-        weightNumLabel.text = String(Int(currentValue))
+        weightNumLabel.text = String(Int(currentValue))+"kg"
+    }
+    
+    @IBAction func calculatePressed(_ sender: UIButton) {
+        //BMI = weight / height^2
+        var BMI = weightSlider.value / pow(heightSlider.value, 2)
+        print(BMI)
     }
     
 }
