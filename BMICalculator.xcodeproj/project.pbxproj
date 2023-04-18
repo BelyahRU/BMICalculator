@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0B867E29EF57B300714723 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0B867D29EF57B300714723 /* CalculatorBrain.swift */; };
 		1ADB37C929EC8B33000BABFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB37C829EC8B33000BABFE /* AppDelegate.swift */; };
 		1ADB37CB29EC8B33000BABFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB37CA29EC8B33000BABFE /* SceneDelegate.swift */; };
 		1ADB37CD29EC8B33000BABFE /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADB37CC29EC8B33000BABFE /* CalculateViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A0B867D29EF57B300714723 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		1ADB37C529EC8B33000BABFE /* BMICalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BMICalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADB37C829EC8B33000BABFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1ADB37CA29EC8B33000BABFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 		1AFEA50429ECA35100B8F060 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1A0B867D29EF57B300714723 /* CalculatorBrain.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				1ADB37CD29EC8B33000BABFE /* CalculateViewController.swift in Sources */,
 				1ADB37C929EC8B33000BABFE /* AppDelegate.swift in Sources */,
 				1ADB37CB29EC8B33000BABFE /* SceneDelegate.swift in Sources */,
+				1A0B867E29EF57B300714723 /* CalculatorBrain.swift in Sources */,
 				1AFEA50B29EF2C2600B8F060 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
