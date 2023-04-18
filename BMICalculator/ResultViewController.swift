@@ -9,17 +9,18 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
-    
+    var BMI = "0.0"
     
     @IBOutlet weak var resultBMILabel: UILabel!
     @IBOutlet weak var resultInformationLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        resultBMILabel.text = BMI
     }
     
-    @IBAction func endButton(_ sender: Any) {
+    @IBAction func recalculatePressed(_ sender: Any) {
+        self.dismiss(animated: true)
     }
     
 }

@@ -124,7 +124,7 @@
                         <outlet property="heightSlider" destination="qB2-iF-5PR" id="243-Pm-jRS"/>
                         <outlet property="weightNumLabel" destination="H5Q-Kh-cYV" id="uc1-Hm-bB3"/>
                         <outlet property="weightSlider" destination="vnn-Fv-JlM" id="meG-6Z-PkQ"/>
-                        <segue destination="b3u-tA-7UB" kind="presentation" identifier="goToResult" id="eRE-yd-co8"/>
+                        <segue destination="b3u-tA-7UB" kind="presentation" identifier="idn2" id="33w-pu-DmU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -149,12 +149,12 @@
                                     <constraint firstAttribute="height" constant="60" id="aPX-7f-z8a"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Button">
+                                <buttonConfiguration key="configuration" style="gray" title="Recalculate">
                                     <color key="baseForegroundColor" red="0.2941176593" green="0.15686275059999999" blue="0.78823530669999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="baseBackgroundColor" red="0.8392156959" green="0.80000001190000003" blue="0.89411771299999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="endButton:" destination="b3u-tA-7UB" eventType="touchUpInside" id="JMD-FT-jJw"/>
+                                    <action selector="recalculatePressed:" destination="b3u-tA-7UB" eventType="touchUpInside" id="JMD-FT-jJw"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ubq-Ah-Z7c">
@@ -184,22 +184,14 @@
                         <viewLayoutGuide key="safeArea" id="n37-YD-CWX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="wpY-9c-QRl" firstAttribute="leading" secondItem="IY8-oL-ESP" secondAttribute="leading" id="6ZT-eq-euQ"/>
-                            <constraint firstItem="wpY-9c-QRl" firstAttribute="top" secondItem="IY8-oL-ESP" secondAttribute="top" id="Gax-Jd-flE"/>
-                            <constraint firstAttribute="bottom" secondItem="wpY-9c-QRl" secondAttribute="bottom" id="Ijf-Mh-ssu"/>
-                            <constraint firstItem="wpY-9c-QRl" firstAttribute="top" secondItem="IY8-oL-ESP" secondAttribute="top" id="MHr-Yt-59a"/>
-                            <constraint firstItem="wpY-9c-QRl" firstAttribute="trailing" secondItem="n37-YD-CWX" secondAttribute="trailing" id="Ok8-qm-xfT"/>
-                            <constraint firstAttribute="trailing" secondItem="wpY-9c-QRl" secondAttribute="trailing" id="Q7V-Qi-fyi"/>
-                            <constraint firstItem="wpY-9c-QRl" firstAttribute="top" secondItem="IY8-oL-ESP" secondAttribute="top" id="SF9-id-z8D"/>
-                            <constraint firstItem="wpY-9c-QRl" firstAttribute="leading" secondItem="n37-YD-CWX" secondAttribute="leading" id="U3C-ds-5rC"/>
+                            <constraint firstAttribute="trailing" secondItem="wpY-9c-QRl" secondAttribute="trailing" id="Sdq-3w-22S"/>
                             <constraint firstItem="ubq-Ah-Z7c" firstAttribute="centerX" secondItem="IY8-oL-ESP" secondAttribute="centerX" id="bev-Jr-lz8"/>
-                            <constraint firstAttribute="bottom" secondItem="wpY-9c-QRl" secondAttribute="bottom" id="fvP-Wx-W6B"/>
-                            <constraint firstAttribute="bottom" secondItem="wpY-9c-QRl" secondAttribute="bottom" id="jhn-qs-x6h"/>
+                            <constraint firstItem="wpY-9c-QRl" firstAttribute="top" secondItem="IY8-oL-ESP" secondAttribute="top" id="gL0-gC-I9P"/>
+                            <constraint firstItem="wpY-9c-QRl" firstAttribute="leading" secondItem="IY8-oL-ESP" secondAttribute="leading" id="hMU-6J-1LF"/>
                             <constraint firstItem="ubq-Ah-Z7c" firstAttribute="centerY" secondItem="IY8-oL-ESP" secondAttribute="centerY" id="qUv-Zv-ZDM"/>
-                            <constraint firstItem="wpY-9c-QRl" firstAttribute="leading" secondItem="IY8-oL-ESP" secondAttribute="leading" id="qsB-BO-QZK"/>
+                            <constraint firstAttribute="bottom" secondItem="wpY-9c-QRl" secondAttribute="bottom" id="rCl-6t-zVE"/>
                             <constraint firstItem="g5G-T8-ZxK" firstAttribute="top" secondItem="n37-YD-CWX" secondAttribute="top" constant="648" id="sFZ-Zc-7S2"/>
                             <constraint firstItem="g5G-T8-ZxK" firstAttribute="centerX" secondItem="wpY-9c-QRl" secondAttribute="centerX" id="w34-RR-9Ff"/>
-                            <constraint firstAttribute="trailing" secondItem="wpY-9c-QRl" secondAttribute="trailing" id="zR0-11-hXi"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="l6j-gM-7Yo"/>
