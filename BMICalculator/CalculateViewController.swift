@@ -29,6 +29,8 @@ class CalculateViewController: UIViewController {
         if segue.identifier == "idn2"{
             let destinationVs = segue.destination as! ResultViewController
             destinationVs.BMI = brain.getBMI()
+            destinationVs.advice = brain.getAdvice()
+            destinationVs.color = brain.getColor()
         }
     }
     
