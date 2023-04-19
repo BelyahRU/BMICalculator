@@ -28,7 +28,7 @@ class CalculateViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "idn2"{
             let destinationVs = segue.destination as! ResultViewController
-            destinationVs.BMI = brain.BMIvalue
+            destinationVs.BMI = brain.getBMI()
         }
     }
     
